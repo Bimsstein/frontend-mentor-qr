@@ -21,17 +21,13 @@ body {
     font-weight: 700;
 }
 
-.attribution {
-    text-align: center;
-}
-
 .container {
     background: #FFF;
     border-radius: 12px;
-    width: 15.6rem;
-    padding: 1rem 1rem 1.5rem 1rem;
+    width: 17rem;
+    padding: 1rem;
     transition: box-shadow .5s;
-    max-width: 500px;
+    max-width: 31.25rem;
     text-align: center;
     border: 1px solid white;
 }
@@ -54,4 +50,10 @@ body {
 #qr-code {
     border-radius: 12px;
     max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .container {
+        transition: none;
+    }
 }
